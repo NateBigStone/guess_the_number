@@ -51,10 +51,11 @@ def main():
         guess = get_guess()
         result = check_guess(guess, secret)
         print(result)
-
         if result == correct:
             print(f'It took you {guess_count} tries!')
-            break
+            repeat = input('Would you like to play again? Y or N: ').lower()
+            if repeat == 'n':
+                break
 
 
 if __name__ == '__main__':
