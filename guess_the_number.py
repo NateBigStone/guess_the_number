@@ -11,7 +11,7 @@ guess_count = 0
 
 def configure_range():
     '''Set the high and low values for the random number'''
-    return 1, 10
+    return 1, 1000
 
 
 def generate_secret(low, high):
